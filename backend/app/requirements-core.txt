@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+python-multipart
+langchain
+langchain_community
+pypdf
+chromadb
+sqlalchemy
+psycopg2-binary
+

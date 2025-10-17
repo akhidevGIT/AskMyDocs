@@ -1,0 +1,6 @@
+torch==2.3.0
+--extra-index-url https://download.pytorch.org/whl/cpu
+langchain_groq
+langchain-huggingface
+sentence_transformers
+langchain-chroma

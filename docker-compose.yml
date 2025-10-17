@@ -1,0 +1,28 @@
+version: "3.9"
+services:
+  backend:
+    build: ./backend
+    container_name: askmydocs_backend
+    ports:
+      - "8000:8000"
+    environment:
+      - CHROMA_PERSIST_DIR=${CHROMA_PERSIST_DIR}
+      - TOP_K=${TOP_K}
+      - GROQ_API_KEY=${GROQ_API_KEY}
+      - GROQ_MODEL=${GROQ_MODEL}
+      - EMBEDDING_MODEL=${EMBEDDING_MODEL}
+    volumes:
+      - ./data/chromadb:/data/chroma
+
+  frontend:
+    build: ./frontend
+    container_name: askmydocs_frontend
+    ports:
+      - "8501:8501"
+    environment:
+      - API_URL=http://backend:8000
+    depends_on:
+      - backend
+
+  # optional postgres (if you want metadata stored in Postgres)
+  

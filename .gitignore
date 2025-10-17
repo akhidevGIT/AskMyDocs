@@ -1,0 +1,83 @@
+# ======================
+# Python
+# ======================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.log
+*.sqlite3
+*.db
+*.db-journal
+
+# ======================
+# Environments
+# ======================
+.env
+.venv/
+venv/
+env/
+ENV/
+*.env
+
+# ======================
+# Streamlit
+# ======================
+.streamlit/
+# (optional) local config for theme or secrets
+.streamlit/secrets.toml
+.streamlit/config.toml
+
+# ======================
+# FastAPI / LangChain Cache
+# ======================
+cache/
+logs/
+tmp/
+langchain.db
+langchain_store/
+
+# ======================
+# VS Code / IDE Files
+# ======================
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ======================
+# OS Generated Files
+# ======================
+.DS_Store
+Thumbs.db
+
+# ======================
+# Docker
+# ======================
+*.pid
+*.seed
+*.bak
+*.tar
+*.gz
+.dockerignore
+
+# ======================
+# Build / Distribution
+# ======================
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ======================
+# Jupyter / Notebooks
+# ======================
+.ipynb_checkpoints/
+
+# ======================
+# Misc
+# ======================
+# ignore any temporary or test files
+test_*.py
+temp_*.py
