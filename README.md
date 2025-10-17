@@ -75,7 +75,7 @@ Build and start all containers (backend, frontend):
 ```bash
 docker compose up --build
 ```
-3️⃣ Open in browser:
+Open in browser:
 
 **Frontend (Streamlit)**: http://localhost:8501
 
